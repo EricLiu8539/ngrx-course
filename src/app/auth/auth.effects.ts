@@ -22,7 +22,8 @@ export class AuthEffects {
           this.router.navigateByUrl('/login');
         })
       ),
-    {dispatch: false});
+    {dispatch: false}
+  );
 
   constructor(private actions$: Actions, private router: Router) {
     // const login$ = this.actions$.pipe(
