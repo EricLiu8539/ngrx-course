@@ -54,14 +54,8 @@ export class AppComponent implements OnInit {
     //   distinctUntilChanged()
     // );
 
-    this.isLoggedIn$ = this.store.pipe(
-      select(isLoggedIn)
-    );
-
-
-    this.isLoggedOut$ = this.store.pipe(
-      select(isLoggedOut)
-    );
+    this.isLoggedIn$ = this.store.pipe(select(isLoggedIn));
+    this.isLoggedOut$ = this.store.pipe(select(isLoggedOut));
   }
 
   logout() {
