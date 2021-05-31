@@ -4,7 +4,7 @@ import {createReducer, on} from '@ngrx/store';
 import {CourseActions} from '../action-types';
 
 export interface CoursesState extends EntityState<Course> {
-  allCoursesLoaded: boolean;
+  allCoursesLoaded: boolean
 }
 
 export const adapter = createEntityAdapter<Course>({
